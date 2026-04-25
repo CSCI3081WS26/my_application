@@ -1,0 +1,9 @@
+INFO         | Android emulator version 36.5.11.0 (build_id 15261927) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+DEBUG   | Current emulator version 36.5.11 is the same as the required version 36.5.11.
+INFO         | Found AVD name 'Pixel_4'
+INFO         | Found AVD target architecture: x86
+INFO         | argv[0]: '/home/johnmodl/Android/Sdk/emulator/emulator'; program directory: '/home/johnmodl/Android/Sdk/emulator'
+INFO         | Found systemPath /home/johnmodl/Android/Sdk/system-images/android-29/google_apis_playstore/x86/
+INFO         | emuDirName: '/home/johnmodl/Android/Sdk/emulator'
+INFO         | Found systemPath /home/johnmodl/Android/Sdk/system-images/android-29/google_apis_playstore/x86/
