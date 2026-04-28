@@ -11,6 +11,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.myapplication.data.JournalEntry
@@ -49,7 +50,8 @@ fun CreateEntryScreenContent(
     var showDatePicker by remember { mutableStateOf(false) }
     var expandedMood by remember { mutableStateOf(false) }
 
-    val dateFormat = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
+    val locale = LocalConfiguration.current.locales[0]
+    val dateFormat = remember(locale) { SimpleDateFormat("MMM dd, yyyy", locale) }
 
     Scaffold(
         topBar = {
